@@ -36,6 +36,9 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         // other services
+        services.AddControllers();
+        services.AddEndpointsApiExplorer();
+        services.AddSwaggerGen();
 
         services.AddBootstrapBase(Configuration);
     }
